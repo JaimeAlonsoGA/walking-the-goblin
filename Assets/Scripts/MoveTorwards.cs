@@ -6,6 +6,7 @@ public class MoveTorwards : MonoBehaviour
 {
     public GameObject goblin;
     public float speed; 
+    public float speedRotate;
 
 
 
@@ -18,6 +19,9 @@ public class MoveTorwards : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, goblin.transform.position, speed);
+        Vector3 direction = goblin.transform.position - transform.position;
+        transform.position = Vector3.MoveTowards(transform.position, goblin.transform.position, speed * Time.deltaTime);
+        Quaternion roation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Lerp(transform.rotation, roation, speed * Time.deltaTime);
     }
 }
