@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Stamina : MonoBehaviour
 {
     public GoblinMushroomInteraction goblinMushroomInteraction;
+    float maxStamina = 100;
     public float stamina = 100;
     float resetTimer = 0;
 
@@ -18,6 +19,8 @@ public class Stamina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        maxStamina = 100 + goblinMushroomInteraction.mushroomsEated * 5;
+
         if (Input.GetKey(KeyCode.LeftShift) && stamina >= 1)
         {
             stamina -= Time.deltaTime * 10;
@@ -33,9 +36,9 @@ public class Stamina : MonoBehaviour
         }
         else
         {
-            stamina = Mathf.Clamp(stamina + Time.deltaTime * 10, 0, 100);
+            stamina = Mathf.Clamp(stamina + Time.deltaTime * 10, 0, maxStamina);
         }
 
-        GetComponent<Slider>().value = stamina / 100f;
+        GetComponent<Slider>().value = stamina / maxStamina;
     }
 }
