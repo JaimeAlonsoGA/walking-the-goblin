@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine.UI;
 
 public class Stamina : MonoBehaviour
 {
+    public GoblinMushroomInteraction goblinMushroomInteraction;
     public float stamina = 100;
     float resetTimer = 0;
 
@@ -31,7 +33,7 @@ public class Stamina : MonoBehaviour
         }
         else
         {
-            stamina += Time.deltaTime * 10;
+            stamina = Mathf.Clamp(stamina + Time.deltaTime * 10, 0, 100);
         }
 
         GetComponent<Slider>().value = stamina / 100f;
