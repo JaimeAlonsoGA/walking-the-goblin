@@ -22,7 +22,7 @@ public class MoveCharacter : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            transform.position -= transform.forward * Time.deltaTime * 10;
+            transform.position += transform.forward * Time.deltaTime * -10;
             isIdle = false;
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
