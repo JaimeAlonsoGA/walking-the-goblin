@@ -6,6 +6,7 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour
 {
     int state = 0;
+    public Stamina stamina;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,6 @@ public class MoveCharacter : MonoBehaviour
 
     void RotationState()
     {
-
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(new Vector3(0, -1, 0) * Time.deltaTime * 300);
@@ -40,18 +40,18 @@ public class MoveCharacter : MonoBehaviour
             transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * 300);
             state = 1;
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        state = 0;
         SpeedState(10, 1);
         RotationState();
 
         if (state == 1)
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) && stamina.stamina > 1)
             {
                 SpeedState(20, 2);
                 GetComponent<Animator>().SetInteger("state", 2);
@@ -65,7 +65,5 @@ public class MoveCharacter : MonoBehaviour
         {
             GetComponent<Animator>().SetInteger("state", 0);
         }
-
-
     }
 }
