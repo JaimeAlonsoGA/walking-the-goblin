@@ -5,26 +5,31 @@ using UnityEngine;
 
 public class MoveCharacter : MonoBehaviour
 {
+    int state = 0;
+
     // Start is called before the first frame update
     void Start()
     {
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpeedState(int velocidad, int stateParam)
     {
-        int state = 0;
-
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            transform.position += transform.forward * Time.deltaTime * 20;
-            state = 1;
+            transform.position += transform.forward * Time.deltaTime * velocidad;
+            state = stateParam;
         }
+
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            transform.position += transform.forward * Time.deltaTime * -20;
-            state = 1;
+            transform.position += transform.forward * Time.deltaTime * -velocidad;
+            state = stateParam;
         }
+    }
+
+    void RotationState()
+    {
+
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(new Vector3(0, -1, 0) * Time.deltaTime * 300);
@@ -36,18 +41,31 @@ public class MoveCharacter : MonoBehaviour
             state = 1;
         }
 
-        if(state == 1)
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        SpeedState(10, 1);
+        RotationState();
+
+        if (state == 1)
         {
-            GetComponent<Animator>().SetInteger("state", 1);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                SpeedState(20, 2);
+                GetComponent<Animator>().SetInteger("state", 2);
+            }
+            else
+            {
+                GetComponent<Animator>().SetInteger("state", 1);
+            }
         }
         else
         {
             GetComponent<Animator>().SetInteger("state", 0);
         }
 
-        if(Input.GetKey(KeyCode.LeftShift) && state == 1)
-        {
-            GetComponent<Animator>().SetInteger("state", 2);
-        }
+
     }
 }
