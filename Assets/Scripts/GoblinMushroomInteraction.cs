@@ -20,7 +20,6 @@ public class GoblinMushroomInteraction : MonoBehaviour
             Mushroom mushroom = mushrooms.ToList().Find((x) => x == other.gameObject.GetComponent<Mushroom>());
             mushroom.SpanwRandomPosition();
             mushroomsEated++;
-            print(mushroom.transform.position);
         }
     }
 
