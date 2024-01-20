@@ -11,8 +11,8 @@ public class GoblinMushroomInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Mushroom")
