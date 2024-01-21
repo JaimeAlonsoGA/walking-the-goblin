@@ -15,14 +15,14 @@ public class MoveCharacter : MonoBehaviour
 
     void SpeedState(int velocidad, int stateParam)
     {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
         {
             // transform.position += transform.forward * Time.deltaTime * velocidad;
             GetComponent<Rigidbody>().velocity = transform.forward * Time.deltaTime * velocidad;
             state = stateParam;
         }
 
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
         {
             // transform.position += transform.forward * Time.deltaTime * -velocidad;
             GetComponent<Rigidbody>().velocity = transform.forward * Time.deltaTime * -velocidad;
@@ -32,12 +32,12 @@ public class MoveCharacter : MonoBehaviour
 
     void RotationState()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
         {
             transform.Rotate(new Vector3(0, -1, 0) * Time.deltaTime * 300);
             state = 1;
         }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
         {
             transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * 300);
             state = 1;
