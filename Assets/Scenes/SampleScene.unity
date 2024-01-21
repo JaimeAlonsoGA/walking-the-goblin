@@ -845,7 +845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d257212506797f4e9155496f22a0b4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.070199
+      value: -81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d257212506797f4e9155496f22a0b4d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -853,7 +853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d257212506797f4e9155496f22a0b4d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -69.47
+      value: -85.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d257212506797f4e9155496f22a0b4d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2256,7 +2256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goblin: {fileID: 636376703}
-  speed: 5
+  speed: 2
   speedRotate: 20
 --- !u!65 &1807115469
 BoxCollider:
