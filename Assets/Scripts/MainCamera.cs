@@ -5,10 +5,13 @@ using UnityEngine.UI;
 
 public class MainCamera : MonoBehaviour
 {
-    GameOver gameOver;
-/* 
-    if(isGameOver)
+    public GameOver gameOver;
+
+    void Update()
     {
-        gameOver.GameOverScreen();
-    } */
+        if(GetComponentInParent<GoblinEnemyInteraction>().isGameOver == true)
+        {
+            gameOver.GameOverScreen();
+        }
+    }
 }

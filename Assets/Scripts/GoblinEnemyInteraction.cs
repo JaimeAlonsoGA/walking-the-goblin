@@ -10,7 +10,6 @@ public class GoblinEnemyInteraction : MonoBehaviour
     {        
         if(other.gameObject.tag == "Enemy")
         {
-            print("Game Over");
             isGameOver = true;
         }
     }
