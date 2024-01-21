@@ -11,6 +11,7 @@ public class GoblinEnemyInteraction : MonoBehaviour
         if(other.gameObject.tag == "Enemy")
         {
             isGameOver = true;
+            GetComponent<Animator>().SetInteger("state", 0);
         }
     }
 }
