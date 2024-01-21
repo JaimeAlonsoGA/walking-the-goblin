@@ -393,6 +393,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &147834662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147834663}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147834663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147834662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 669340293}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &179276875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1007,6 +1038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848e9b9bc39d7c04cba4c90640eb8c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
   stamina: {fileID: 1021380205}
 --- !u!114 &636376707
 MonoBehaviour:
@@ -1091,6 +1123,44 @@ CapsuleCollider:
   m_Height: 1.8678482
   m_Direction: 1
   m_Center: {x: 0, y: 0.8449336, z: 0}
+--- !u!114 &636376717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636376703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae563100d6a0f545adc7f5c2a11d278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <gameOverSound>k__BackingField:
+    Guid:
+      Data1: -880170391
+      Data2: 1310000421
+      Data3: 1353913268
+      Data4: -2074338480
+    Path: event:/Game Over Impact
+  <goblinFootstepsWalk>k__BackingField:
+    Guid:
+      Data1: -1422559742
+      Data2: 1334312503
+      Data3: -1300965733
+      Data4: -1351670520
+    Path: event:/Goblin/Goblin Footsteps Walk
+--- !u!114 &636376718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636376703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3645fdfca2f2014cba5731e51ec8192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &660370376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1159,6 +1229,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff3098af8756d964aabe8d65b321586e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &669340291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669340293}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &669340293
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669340291}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.4, y: 6.801057, z: -15.518454}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 147834663}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,7 +1661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
+  attenuationObject: {fileID: 636376703}
 --- !u!1 &1021380202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,6 +1966,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 636376715}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 636376718}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 636376717}
   m_SourcePrefab: {fileID: 100100000, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
 --- !u!1 &1365798575
 GameObject:
@@ -2454,3 +2562,4 @@ SceneRoots:
   - {fileID: 518922304}
   - {fileID: 583037712}
   - {fileID: 1181345422}
+  - {fileID: 669340293}

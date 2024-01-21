@@ -1,33 +1,30 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using UnityEngine;
 
 public class MoveCharacter : MonoBehaviour
 {
-    int state = 0;
+    public int state = 0;
     public Stamina stamina;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
+    
     void SpeedState(int velocidad, int stateParam)
     {
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
-        {
+        {       
+            
             // transform.position += transform.forward * Time.deltaTime * velocidad;
             GetComponent<Rigidbody>().velocity = transform.forward * Time.deltaTime * velocidad;
             state = stateParam;
         }
 
-        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
+        /* if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
         {
             // transform.position += transform.forward * Time.deltaTime * -velocidad;
             GetComponent<Rigidbody>().velocity = transform.forward * Time.deltaTime * -velocidad;
             state = stateParam;
-        }
+        } */
     }
 
     void RotationState()
@@ -69,4 +66,5 @@ public class MoveCharacter : MonoBehaviour
             GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
     }
+
 }
