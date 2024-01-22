@@ -1138,13 +1138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3645fdfca2f2014cba5731e51ec8192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <GameOverSFX>k__BackingField:
-    Guid:
-      Data1: -880170391
-      Data2: 1310000421
-      Data3: 1353913268
-      Data4: -2074338480
-    Path: event:/SFX/Game Over Impact
 --- !u!1001 &660370376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2380,6 +2373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e997eb25c7d0d8143a6227aded4419e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goblinEnemyInteraction: {fileID: 636376712}
 --- !u!1 &2010702787
 GameObject:
   m_ObjectHideFlags: 0

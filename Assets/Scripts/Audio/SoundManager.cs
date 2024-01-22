@@ -28,6 +28,7 @@ public class SoundManager : MonoBehaviour
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(runInstance, GetComponent<Transform>(), GetComponent<Rigidbody>());
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(goblinGroanInstance, GetComponent<Transform>(), GetComponent<Rigidbody>());
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(ambienceInstance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
         ambienceInstance.start();
         goblinGroanInstance.start();
     }
@@ -40,20 +41,34 @@ public class SoundManager : MonoBehaviour
             ambienceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (GetComponent<Animator>().GetInteger("state") == 2)
         {
             PLAYBACK_STATE playbackState;
-            goblinGroanInstance.getPlaybackState(out playbackState);
+            runInstance.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                runInstance.start();
+            }
+        }
+        else
+        {
+            runInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+
+        if (GetComponent<Animator>().GetInteger("state") == 1)
+        {
+            PLAYBACK_STATE playbackState;
+            walkInstance.getPlaybackState(out playbackState);
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
             {
                 walkInstance.start();
             }
         }
-        /*         else
-                {
-                    walkInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                }
-         */
+        else
+        {
+            walkInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+
     }
 
 

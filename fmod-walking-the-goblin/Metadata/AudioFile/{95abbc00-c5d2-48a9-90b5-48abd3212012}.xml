@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{95abbc00-c5d2-48a9-90b5-48abd3212012}">
+		<property name="assetPath">
+			<value>SFX/Game Over Impact.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.0407708333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c3ee0a6f-da42-48aa-a1cb-8a503e7e70e1}</destination>
+		</relationship>
+	</object>
+</objects>

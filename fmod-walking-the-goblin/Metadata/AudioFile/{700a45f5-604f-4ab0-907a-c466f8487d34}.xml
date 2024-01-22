@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{700a45f5-604f-4ab0-907a-c466f8487d34}">
+		<property name="assetPath">
+			<value>Gobin/Footsteps/Weapons, Armor, Light, Heavy Steps 02 SND13148 - Pitch 116 5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.47016666666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c3ee0a6f-da42-48aa-a1cb-8a503e7e70e1}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -453,8 +453,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/walking-the-goblin.fspro
-  sourceBankPath: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build
+  sourceProjectPath: fmod-walking-the-goblin/walking-the-goblin.fspro
+  sourceBankPath: fmod-walking-the-goblin/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
