@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{fd2a2ade-1b7f-48de-b67b-c141a0a80087}">
+		<property name="assetPath">
+			<value>Gobin/Groan/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c3ee0a6f-da42-48aa-a1cb-8a503e7e70e1}</destination>
+		</relationship>
+	</object>
+</objects>
