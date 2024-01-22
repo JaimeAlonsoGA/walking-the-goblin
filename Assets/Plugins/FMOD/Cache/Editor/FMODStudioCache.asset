@@ -123,7 +123,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638415590684806815
+  lastModified: 638415593511241840
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -210,7 +210,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638415590684847080
+  lastModified: 638415593511251854
   FileSizes:
   - Name: Desktop
     Value: 1150
@@ -257,7 +257,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638415590687957289
+  lastModified: 638415593511261878
   FileSizes:
   - Name: Desktop
     Value: 145376
@@ -277,7 +277,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Goblin.bank
   Name: Goblin
   StudioPath: bank:/Goblin
-  lastModified: 638415590684735497
+  lastModified: 638415593511236836
   FileSizes:
   - Name: Desktop
     Value: 237472
@@ -312,7 +312,7 @@ MonoBehaviour:
   - {fileID: -3753365377350184479}
   StringsBanks:
   - {fileID: -735053151647265072}
-  cacheTime: 638415590687957289
+  cacheTime: 638415593511261878
   cacheVersion: 131616
 --- !u!114 &638691980073777962
 MonoBehaviour:
@@ -524,7 +524,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638415590679981397
+  lastModified: 638415593511226832
   FileSizes:
   - Name: Desktop
     Value: 1246240

@@ -166,12 +166,12 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: d911cb557a21b634193465ab0ec4edda, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
+  m_TreeDistance: 2004
+  m_TreeBillboardDistance: 71
+  m_TreeCrossFadeLength: 17.2
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
+  m_DetailObjectDistance: 27
+  m_DetailObjectDensity: 0.696
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
@@ -249,8 +249,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -60, y: 0}
+  m_SizeDelta: {x: -120, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101162674
 MonoBehaviour:
@@ -1365,8 +1365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -0.5399933, y: 0}
-  m_SizeDelta: {x: -11.080019, y: 0}
+  m_AnchoredPosition: {x: -60.539993, y: 0}
+  m_SizeDelta: {x: -131.08002, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &829883559
 GameObject:
@@ -1863,7 +1863,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.09
+      value: 58.113
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1871,7 +1871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32
+      value: 31.688
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
       propertyPath: m_LocalRotation.w
