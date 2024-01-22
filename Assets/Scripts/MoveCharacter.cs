@@ -15,16 +15,16 @@ public class MoveCharacter : MonoBehaviour
         {       
             
             // transform.position += transform.forward * Time.deltaTime * velocidad;
-            GetComponent<Rigidbody>().velocity = transform.forward * Time.deltaTime * velocidad;
+            GetComponent<Rigidbody>().velocity = transform.forward * velocidad;
             state = stateParam;
         }
 
-        /* if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && GetComponent<GoblinEnemyInteraction>().isGameOver == false)
         {
             // transform.position += transform.forward * Time.deltaTime * -velocidad;
-            GetComponent<Rigidbody>().velocity = transform.forward * Time.deltaTime * -velocidad;
+            GetComponent<Rigidbody>().velocity = transform.forward * -velocidad;
             state = stateParam;
-        } */
+        } 
     }
 
     void RotationState()
@@ -45,14 +45,14 @@ public class MoveCharacter : MonoBehaviour
     void Update()
     {
         state = 0;
-        SpeedState(100, 1);
+        SpeedState(7, 1);
         RotationState();
 
         if (state == 1)
         {
             if (Input.GetKey(KeyCode.LeftShift) && stamina.stamina > 1)
             {
-                SpeedState(250, 2);
+                SpeedState(20, 2);
                 GetComponent<Animator>().SetInteger("state", 2);
             }
             else
