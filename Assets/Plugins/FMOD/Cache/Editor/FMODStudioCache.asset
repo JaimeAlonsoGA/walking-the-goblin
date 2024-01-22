@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2652990995636841726
+--- !u!114 &-8900413666508368601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,9 +10,63 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Game Over Impact
+  m_Name: event:/SFX/Game Over Impact
   m_EditorClassIdentifier: 
-  Path: event:/Game Over Impact
+  Path: event:/SFX/Game Over Impact
+  Guid:
+    Data1: -880170391
+    Data2: 1310000421
+    Data3: 1353913268
+    Data4: -2074338480
+  Banks:
+  - {fileID: 7011755858054652151}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7510806463948478809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Tension SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Tension SFX
+  Guid:
+    Data1: 82021342
+    Data2: 1277253026
+    Data3: -1752078680
+    Data4: -1456248175
+  Banks:
+  - {fileID: 6962323523700961930}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.2000003
+  Length: 6857
+--- !u!114 &-6072703694872610391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Game Over Impact
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Game Over Impact
   Guid:
     Data1: -880170391
     Data2: 1310000421
@@ -27,6 +81,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4189121399176082737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Goblin/Goblin Groan
+  m_EditorClassIdentifier: 
+  Path: event:/Goblin/Goblin Groan
+  Guid:
+    Data1: 2001198766
+    Data2: 1302193740
+    Data3: -1970549853
+    Data4: 1938748596
+  Banks:
+  - {fileID: 5990475242867130248}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &-2514626233937262795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638415549894017651
+  FileSizes:
+  - Name: Desktop
+    Value: 1246240
+  Exists: 1
 --- !u!114 &-2114553409552264661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,11 +143,38 @@ MonoBehaviour:
   Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638414771259993159
+  lastModified: 638415485994440655
   FileSizes:
   - Name: Desktop
-    Value: 918
+    Value: 1150
   Exists: 1
+--- !u!114 &-1668892125186040319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Goblin/Goblin Groan
+  m_EditorClassIdentifier: 
+  Path: event:/Goblin/Goblin Groan
+  Guid:
+    Data1: 2001198766
+    Data2: 1302193740
+    Data3: -1970549853
+    Data4: 1938748596
+  Banks:
+  - {fileID: -1377382057084377237}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &-1377382057084377237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,11 +190,38 @@ MonoBehaviour:
   Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Goblin.bank
   Name: Goblin
   StudioPath: bank:/Goblin
-  lastModified: 638414771260698801
+  lastModified: 638415485994314777
   FileSizes:
   - Name: Desktop
-    Value: 79712
+    Value: 237472
   Exists: 1
+--- !u!114 &-431093163846601997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Goblin/Goblin Footsteps Run
+  m_EditorClassIdentifier: 
+  Path: event:/Goblin/Goblin Footsteps Run
+  Guid:
+    Data1: 489180876
+    Data2: 1325030272
+    Data3: 254396095
+    Data4: 2056304795
+  Banks:
+  - {fileID: -1377382057084377237}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,19 +235,24 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2114553409552264661}
-  - {fileID: 992158203076040030}
-  - {fileID: 6962323523700961930}
-  - {fileID: -1377382057084377237}
+  - {fileID: 3014318014369352126}
+  - {fileID: -2514626233937262795}
+  - {fileID: 5990475242867130248}
+  - {fileID: 7973677343225189479}
+  - {fileID: 7011755858054652151}
   EditorEvents:
-  - {fileID: -2652990995636841726}
-  - {fileID: 638691980073777962}
+  - {fileID: 815791892952603859}
+  - {fileID: 7298151277164626761}
+  - {fileID: -4189121399176082737}
+  - {fileID: 2814605553480012923}
+  - {fileID: -8900413666508368601}
+  - {fileID: 1332359858940008091}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 992158203076040030}
+  - {fileID: 7973677343225189479}
   StringsBanks:
-  - {fileID: -2114553409552264661}
-  cacheTime: 638414771260698801
+  - {fileID: 3014318014369352126}
+  cacheTime: 638415549894017651
   cacheVersion: 131616
 --- !u!114 &638691980073777962
 MonoBehaviour:
@@ -121,6 +281,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &744155152332789588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638415485995076075
+  FileSizes:
+  - Name: Desktop
+    Value: 1246240
+  Exists: 1
+--- !u!114 &815791892952603859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience
+  Guid:
+    Data1: 1251585826
+    Data2: 1325149246
+    Data3: -326618693
+    Data4: -2124914689
+  Banks:
+  - {fileID: -2514626233937262795}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56251
 --- !u!114 &992158203076040030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,10 +343,104 @@ MonoBehaviour:
   Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638414771259963109
+  lastModified: 638415485994400531
   FileSizes:
   - Name: Desktop
     Value: 1036
+  Exists: 1
+--- !u!114 &1332359858940008091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Tension SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Tension SFX
+  Guid:
+    Data1: 82021342
+    Data2: 1277253026
+    Data3: -1752078680
+    Data4: -1456248175
+  Banks:
+  - {fileID: 7011755858054652151}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 8.6
+  MaxDistance: 150
+  Length: 6857
+--- !u!114 &2814605553480012923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Goblin/Goblin Footsteps Run
+  m_EditorClassIdentifier: 
+  Path: event:/Goblin/Goblin Footsteps Run
+  Guid:
+    Data1: 489180876
+    Data2: 1325030272
+    Data3: 254396095
+    Data4: 2056304795
+  Banks:
+  - {fileID: 5990475242867130248}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &3014318014369352126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638415549893533760
+  FileSizes:
+  - Name: Desktop
+    Value: 1150
+  Exists: 1
+--- !u!114 &5990475242867130248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Goblin.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Goblin.bank
+  Name: Goblin
+  StudioPath: bank:/Goblin
+  lastModified: 638415549893452769
+  FileSizes:
+  - Name: Desktop
+    Value: 237472
   Exists: 1
 --- !u!114 &6962323523700961930
 MonoBehaviour:
@@ -156,8 +457,102 @@ MonoBehaviour:
   Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638414771260267735
+  lastModified: 638415485994705068
   FileSizes:
   - Name: Desktop
-    Value: 40352
+    Value: 145376
   Exists: 1
+--- !u!114 &7011755858054652151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638415549893775305
+  FileSizes:
+  - Name: Desktop
+    Value: 145376
+  Exists: 1
+--- !u!114 &7298151277164626761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Goblin/Goblin Footsteps Walk
+  m_EditorClassIdentifier: 
+  Path: event:/Goblin/Goblin Footsteps Walk
+  Guid:
+    Data1: -1422559742
+    Data2: 1334312503
+    Data3: -1300965733
+    Data4: -1351670520
+  Banks:
+  - {fileID: 5990475242867130248}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &7973677343225189479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/amats/Documents/FMOD Studio/walking-the-goblin/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638415549893498406
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &8774304454755511050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience
+  Guid:
+    Data1: 1251585826
+    Data2: 1325149246
+    Data3: -326618693
+    Data4: -2124914689
+  Banks:
+  - {fileID: 744155152332789588}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56251

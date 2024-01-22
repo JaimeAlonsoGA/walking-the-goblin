@@ -940,6 +940,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2d257212506797f4e9155496f22a0b4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1807115469}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2d257212506797f4e9155496f22a0b4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1807115472}
   m_SourcePrefab: {fileID: 100100000, guid: 2d257212506797f4e9155496f22a0b4d, type: 3}
 --- !u!1 &599984591
 GameObject:
@@ -1123,32 +1126,6 @@ CapsuleCollider:
   m_Height: 1.8678482
   m_Direction: 1
   m_Center: {x: 0, y: 0.8449336, z: 0}
---- !u!114 &636376717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636376703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ae563100d6a0f545adc7f5c2a11d278, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <gameOverSound>k__BackingField:
-    Guid:
-      Data1: -880170391
-      Data2: 1310000421
-      Data3: 1353913268
-      Data4: -2074338480
-    Path: event:/Game Over Impact
-  <goblinFootstepsWalk>k__BackingField:
-    Guid:
-      Data1: -1422559742
-      Data2: 1334312503
-      Data3: -1300965733
-      Data4: -1351670520
-    Path: event:/Goblin/Goblin Footsteps Walk
 --- !u!114 &636376718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,6 +1138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3645fdfca2f2014cba5731e51ec8192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <GameOverSFX>k__BackingField:
+    Guid:
+      Data1: -880170391
+      Data2: 1310000421
+      Data3: 1353913268
+      Data4: -2074338480
+    Path: event:/SFX/Game Over Impact
 --- !u!1001 &660370376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1969,9 +1953,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 636376718}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 636376717}
   m_SourcePrefab: {fileID: 100100000, guid: 4ee2c69123b95934c92749a341c69df0, type: 3}
 --- !u!1 &1365798575
 GameObject:
@@ -2387,6 +2368,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.83, y: 2.32, z: 1.96}
   m_Center: {x: 0, y: 0.62, z: 0.21}
+--- !u!114 &1807115472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807115462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e997eb25c7d0d8143a6227aded4419e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010702787
 GameObject:
   m_ObjectHideFlags: 0

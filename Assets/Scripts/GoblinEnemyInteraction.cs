@@ -13,7 +13,6 @@ public class GoblinEnemyInteraction : MonoBehaviour
         {
             isGameOver = true;
             GetComponent<Animator>().SetInteger("state", 0);
-            gameObject.GetComponent<SoundManager>().PlayOneShot(FMODevents.instance.gameOverSound, transform.position);
         }
     }
 }
