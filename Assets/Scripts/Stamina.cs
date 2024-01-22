@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class Stamina : MonoBehaviour
 {
     public GoblinMushroomInteraction goblinMushroomInteraction;
-    float maxStamina = 100;
-    public float stamina = 100;
+    float maxStamina = 20;
+    public float stamina = 20;
     float resetTimer = 0;
 
     Image fill;
@@ -26,9 +26,9 @@ public class Stamina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        maxStamina = 100 + goblinMushroomInteraction.mushroomsEated * 5;
-        background.offsetMax = new Vector2(goblinMushroomInteraction.mushroomsEated * 5, background.offsetMax.y);
-        fillArea.offsetMax = new Vector2(goblinMushroomInteraction.mushroomsEated * 5 - 6.08f, fillArea.offsetMax.y);
+        maxStamina = 20 + goblinMushroomInteraction.mushroomsEated * 5;
+        background.offsetMax = new Vector2(goblinMushroomInteraction.mushroomsEated * 5 - 120f, background.offsetMax.y);
+        fillArea.offsetMax = new Vector2(goblinMushroomInteraction.mushroomsEated * 5 - 126.08f, fillArea.offsetMax.y);
 
         if (Input.GetKey(KeyCode.LeftShift) && stamina >= 1)
         {
@@ -37,7 +37,7 @@ public class Stamina : MonoBehaviour
         else if (stamina < 1)
         {
             resetTimer += Time.deltaTime;
-            if (resetTimer > 1)
+            if (resetTimer > 3)
             {
                 resetTimer = 0;
                 stamina = 1;
