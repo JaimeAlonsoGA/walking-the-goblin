@@ -13,6 +13,7 @@ public class GoblinEnemyInteraction : MonoBehaviour
         {
             isGameOver = true;
             GetComponent<Animator>().SetInteger("state", 0);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Game Over Impact", transform.position);
         }
     }
 }

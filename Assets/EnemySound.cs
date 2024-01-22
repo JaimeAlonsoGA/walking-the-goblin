@@ -22,7 +22,6 @@ public class EnemySound : MonoBehaviour
         if(goblinEnemyInteraction.isGameOver == true)
         {
             tensionStrings.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Game Over Impact", transform.position);
         }
     }
 }
