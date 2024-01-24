@@ -18,7 +18,7 @@ public class SoundManager : MonoBehaviour
     // [field: SerializeField] public EventReference GameOverSFX {get; private set; }
 
     void Start()
-    {
+    {   
         walkInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Goblin/Goblin Footsteps Walk");
         runInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Goblin/Goblin Footsteps Run");
         goblinGroanInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Goblin/Goblin Groan");
@@ -28,7 +28,7 @@ public class SoundManager : MonoBehaviour
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(runInstance, GetComponent<Transform>(), GetComponent<Rigidbody>());
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(goblinGroanInstance, GetComponent<Transform>(), GetComponent<Rigidbody>());
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(ambienceInstance, GetComponent<Transform>(), GetComponent<Rigidbody>());
-
+        
         ambienceInstance.start();
         goblinGroanInstance.start();
     }

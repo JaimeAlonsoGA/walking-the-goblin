@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{04e38bde-55a2-4c21-a866-9197916a33a9}">
+		<property name="color">
+			<value>Magenta</value>
+		</property>
 		<property name="name">
 			<value>Tension SFX</value>
 		</property>
@@ -46,6 +49,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{3f24686f-db22-49ef-ab36-0cd9f4586e90}">
+		<property name="color">
+			<value>Magenta</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{381dfb6c-b05f-4622-9ac8-d9e54a7957bf}</destination>
 		</relationship>
@@ -53,7 +59,7 @@
 			<destination>{56b7c99a-7b25-4dc4-bd78-661c9226835b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{d71990d9-d07c-4133-8368-666ccfaa8a3c}</destination>
+			<destination>{e13a91ea-ce7f-4243-bcf4-c0c5c6ed807b}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ab5b27e2-4fb5-4fa1-a498-7249afd48382}">
@@ -61,7 +67,7 @@
 			<value>8.60000038</value>
 		</property>
 		<property name="maximumDistance">
-			<value>150</value>
+			<value>70</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{15aa79bd-50cf-46da-bb56-92324b2a82a2}" />
@@ -82,6 +88,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d3f811eb-da9f-4326-a0e8-c5ecfb4480fb}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{7340b136-0917-49b4-8cae-fc1f5ddd1da5}</destination>
 		</relationship>
@@ -107,6 +116,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{9fff1e7f-8b92-433c-84fc-368678e99078}">
+		<property name="volume">
+			<value>-5.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -165,7 +177,7 @@
 			<value>8.60000038</value>
 		</property>
 		<property name="maximumDistance">
-			<value>150</value>
+			<value>70</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{1df3650b-41f5-4385-8051-0caf82bd2ac9}" />

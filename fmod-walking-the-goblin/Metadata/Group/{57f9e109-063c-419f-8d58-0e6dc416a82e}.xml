@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{57f9e109-063c-419f-8d58-0e6dc416a82e}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
+		<property name="name">
+			<value>GoblinFoots</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{b3e49602-47ad-4295-8bea-f003bc7ee679}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{573923d2-b2f9-4667-b5d0-da9ea849e63b}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d620bb3f-9049-48ef-a4ed-a83da82ea617}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{b3e49602-47ad-4295-8bea-f003bc7ee679}">
+		<relationship name="effects">
+			<destination>{8dce9750-2aa6-4b1b-996e-d8a49d547d1a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{573923d2-b2f9-4667-b5d0-da9ea849e63b}" />
+	<object class="MixerBusFader" id="{8dce9750-2aa6-4b1b-996e-d8a49d547d1a}" />
+</objects>

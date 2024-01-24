@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{e13a91ea-ce7f-4243-bcf4-c0c5c6ed807b}">
+		<property name="name">
+			<value>Troll</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{05315732-7463-494f-a1a3-cd95f6a17594}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{a8fe97ac-6650-44eb-99a6-a1c160c45a98}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d71990d9-d07c-4133-8368-666ccfaa8a3c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{05315732-7463-494f-a1a3-cd95f6a17594}">
+		<relationship name="effects">
+			<destination>{996f6e34-5350-4d19-b0e2-469956e4775c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{a8fe97ac-6650-44eb-99a6-a1c160c45a98}" />
+	<object class="MixerBusFader" id="{996f6e34-5350-4d19-b0e2-469956e4775c}" />
+</objects>

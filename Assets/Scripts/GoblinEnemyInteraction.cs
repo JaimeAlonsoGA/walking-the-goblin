@@ -16,4 +16,4 @@ public class GoblinEnemyInteraction : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Game Over Impact", transform.position);
         }
     }
-}
+}   
