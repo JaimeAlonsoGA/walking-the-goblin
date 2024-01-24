@@ -123,7 +123,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638417003268311967
+  lastModified: 638417155647159223
   FileSizes:
   - Name: Desktop
     Value: 1778
@@ -210,7 +210,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638417003268372558
+  lastModified: 638417155647194387
   FileSizes:
   - Name: Desktop
     Value: 1432
@@ -257,7 +257,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638417003268651560
+  lastModified: 638417155647440918
   FileSizes:
   - Name: Desktop
     Value: 145376
@@ -277,10 +277,10 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Goblin.bank
   Name: Goblin
   StudioPath: bank:/Goblin
-  lastModified: 638417003268230816
+  lastModified: 638417155647128328
   FileSizes:
   - Name: Desktop
-    Value: 237472
+    Value: 237216
   Exists: 1
 --- !u!114 &-38902367574250210
 MonoBehaviour:
@@ -297,10 +297,10 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Troll.bank
   Name: Troll
   StudioPath: bank:/Troll
-  lastModified: 638417003269035325
+  lastModified: 638417155648017368
   FileSizes:
   - Name: Desktop
-    Value: 87840
+    Value: 114656
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -334,7 +334,7 @@ MonoBehaviour:
   - {fileID: -3753365377350184479}
   StringsBanks:
   - {fileID: -735053151647265072}
-  cacheTime: 638417003269035325
+  cacheTime: 638417155648017368
   cacheVersion: 131616
 --- !u!114 &638691980073777962
 MonoBehaviour:
@@ -479,11 +479,11 @@ MonoBehaviour:
   - {fileID: -175097727098142556}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5000
+  Length: 630
 --- !u!114 &3976746642077078988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,11 +506,11 @@ MonoBehaviour:
   - {fileID: -38902367574250210}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 6
   MaxDistance: 80
-  Length: 2000
+  Length: 2100
 --- !u!114 &6962323523700961930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +553,7 @@ MonoBehaviour:
   - {fileID: -175097727098142556}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -573,7 +573,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638417003266837309
+  lastModified: 638417155646149286
   FileSizes:
   - Name: Desktop
     Value: 1246240
