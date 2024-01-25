@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7.2000003
   Length: 6857
+--- !u!114 &-6349174311000683233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mushroom
+  m_EditorClassIdentifier: 
+  Path: event:/Mushroom
+  Guid:
+    Data1: 1754077769
+    Data2: 1190059999
+    Data3: -1856214643
+    Data4: -230927124
+  Banks:
+  - {fileID: -315036211145103686}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6072703694872610391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +150,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638417155647159223
+  lastModified: 638418210738570927
   FileSizes:
   - Name: Desktop
     Value: 1778
@@ -210,10 +237,10 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638417155647194387
+  lastModified: 638418210738627702
   FileSizes:
   - Name: Desktop
-    Value: 1432
+    Value: 1470
   Exists: 1
 --- !u!114 &-431093163846601997
 MonoBehaviour:
@@ -257,10 +284,10 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638417155647440918
+  lastModified: 638418210739045792
   FileSizes:
   - Name: Desktop
-    Value: 145376
+    Value: 251360
   Exists: 1
 --- !u!114 &-175097727098142556
 MonoBehaviour:
@@ -277,7 +304,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Goblin.bank
   Name: Goblin
   StudioPath: bank:/Goblin
-  lastModified: 638417155647128328
+  lastModified: 638418210738494811
   FileSizes:
   - Name: Desktop
     Value: 237216
@@ -297,10 +324,10 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Troll.bank
   Name: Troll
   StudioPath: bank:/Troll
-  lastModified: 638417155648017368
+  lastModified: 638418210739591412
   FileSizes:
   - Name: Desktop
-    Value: 114656
+    Value: 114752
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -329,12 +356,13 @@ MonoBehaviour:
   - {fileID: -8900413666508368601}
   - {fileID: 1332359858940008091}
   - {fileID: 3976746642077078988}
+  - {fileID: -6349174311000683233}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3753365377350184479}
   StringsBanks:
   - {fileID: -735053151647265072}
-  cacheTime: 638417155648017368
+  cacheTime: 638418210739591412
   cacheVersion: 131616
 --- !u!114 &638691980073777962
 MonoBehaviour:
@@ -573,7 +601,7 @@ MonoBehaviour:
   Path: fmod-walking-the-goblin/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638417155646149286
+  lastModified: 638418210737070317
   FileSizes:
   - Name: Desktop
     Value: 1246240

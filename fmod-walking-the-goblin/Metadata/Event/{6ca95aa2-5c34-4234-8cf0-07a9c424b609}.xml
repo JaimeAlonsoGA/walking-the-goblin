@@ -205,7 +205,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{d5f3969c-dbb7-4ad5-8edb-68d38809d839}">
 		<property name="volume">
-			<value>-27.5</value>
+			<value>-42</value>
 		</property>
 		<property name="name">
 			<value>Audio 3</value>
@@ -341,6 +341,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{1d67db5c-e583-4c1f-ae05-8bf6d7aac2b4}">
 		<relationship name="effects">
+			<destination>{3e64f2ba-ec77-44bb-89f7-377ec7aba477}</destination>
 			<destination>{f947f9f8-eb19-4a21-a437-73550db6fc30}</destination>
 			<destination>{06303716-6cc8-4f88-8973-db65ded3635e}</destination>
 			<destination>{917b6f46-9fa7-4db0-bef8-f835a6cb363e}</destination>
@@ -401,6 +402,11 @@
 			<value>30</value>
 		</property>
 	</object>
+	<object class="DistortionEffect" id="{3e64f2ba-ec77-44bb-89f7-377ec7aba477}">
+		<property name="level">
+			<value>0.774999976</value>
+		</property>
+	</object>
 	<object class="MultibandEqEffect" id="{f947f9f8-eb19-4a21-a437-73550db6fc30}">
 		<property name="filterTypeD">
 			<value>9</value>
@@ -424,7 +430,7 @@
 	<object class="MixerBusFader" id="{06303716-6cc8-4f88-8973-db65ded3635e}" />
 	<object class="SFXReverbEffect" id="{917b6f46-9fa7-4db0-bef8-f835a6cb363e}">
 		<property name="wetLevel">
-			<value>-18</value>
+			<value>-20.5</value>
 		</property>
 	</object>
 </objects>

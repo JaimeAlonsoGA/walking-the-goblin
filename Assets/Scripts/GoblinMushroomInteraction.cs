@@ -8,6 +8,8 @@ public class GoblinMushroomInteraction : MonoBehaviour
     public int mushroomsEated = 0;
     public Mushroom[] mushrooms = new Mushroom[6];
 
+    public SoundManager mushroomInstance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class GoblinMushroomInteraction : MonoBehaviour
             Mushroom mushroom = mushrooms.ToList().Find((x) => x == other.gameObject.GetComponent<Mushroom>());
             mushroom.SpanwRandomPosition();
             mushroomsEated++;
+            mushroomInstance.PlaySound("event:/Mushroom");
         }
     }
 

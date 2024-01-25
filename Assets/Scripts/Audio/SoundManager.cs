@@ -33,7 +33,7 @@ public class SoundManager : MonoBehaviour
         goblinGroanInstance.start();
     }
 
-    void PlaySound(string path)
+    public void PlaySound(string path)
     {
         FMODUnity.RuntimeManager.PlayOneShot(path, GetComponent<Transform>().position);
     }
