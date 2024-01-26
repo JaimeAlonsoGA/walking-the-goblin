@@ -10,8 +10,8 @@ using UnityEngine.Rendering;
 public class SoundManager : MonoBehaviour
 {
     // public static SoundManager Instance {get; private set; }
-    // private FMOD.Studio.EventInstance walkInstance;
-    // private FMOD.Studio.EventInstance runInstance;
+    private FMOD.Studio.EventInstance walkInstance;
+    private FMOD.Studio.EventInstance runInstance;
     private FMOD.Studio.EventInstance goblinGroanInstance;
     private FMOD.Studio.EventInstance ambienceInstance;
 
@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
     void Start()
     {   
         // walkInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Goblin/Goblin Footsteps Walk");
-        // runInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Goblin/Goblin Footsteps Run");
+        // runInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Goblin/FootstepsRun");
         goblinGroanInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Goblin/Goblin Groan");
         ambienceInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Ambience");
 
@@ -40,11 +40,11 @@ public class SoundManager : MonoBehaviour
 
     void Update()
     {
-        if (GetComponent<GoblinEnemyInteraction>().isGameOver == true)
-        {
-            goblinGroanInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            ambienceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        }
+        // if (GetComponent<GoblinEnemyInteraction>().isGameOver == true)
+        // {
+        //     goblinGroanInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        //     ambienceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        // }
 
         // if (GetComponent<Animator>().GetInteger("state") == 2)
         // {
@@ -52,12 +52,12 @@ public class SoundManager : MonoBehaviour
         //     runInstance.getPlaybackState(out playbackState);
         //     if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
         //     {
-        //         // runInstance.start();
+        //         runInstance.start();
         //     }
         // }
         // else
         // {
-        //     // runInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //     runInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         // }
 
         // if (GetComponent<Animator>().GetInteger("state") == 1)

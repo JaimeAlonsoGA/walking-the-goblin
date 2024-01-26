@@ -9,11 +9,6 @@ public class GoblinMushroomInteraction : MonoBehaviour
     public Mushroom[] mushrooms = new Mushroom[6];
 
     public SoundManager mushroomInstance;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
     
     void OnTriggerEnter(Collider other)
     {
@@ -24,11 +19,5 @@ public class GoblinMushroomInteraction : MonoBehaviour
             mushroomsEated++;
             mushroomInstance.PlaySound("event:/Mushroom");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
